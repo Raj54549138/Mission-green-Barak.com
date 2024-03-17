@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mission Green Barak</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<nav class="navigation">
+    <div class="L"><img src="./logo.png" alt="" style="height: 90px; width: 90px;">
+    </div>
+    <div class="heading">
+    <br><br>
+    <h1><b>Mission Green Barak</b></h1>
+    </div>
+    <div class="nav_items">
+      <a href="A home.html">Home</a>
+  </div>
+  </nav>
+<br>
+<div class="center">
+    <b><u><h1>Donate for a good cause</h1></u><b/>
+      <p>we believe in the importance of protecting our natural world. Our environment is our most valuable resource, and it is up to all of us to preserve it for future generations.</p>
+      <p>Our environmental initiatives aim to make a positive impact on the health of our planet. From planting trees and cleaning up polluted areas to educating local communities about sustainability, we are committed to making a difference.</p>
+    </div>
+<div class="content">
+<br><br>
+<div class="container">
+    <u><h2>Donation Form</h2></u>
+    <p>I would like to support the environment development campaign started by your organization.</p>
+<form action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Contact Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="amount">pay amount:</label>
+    <input type="number"id="amount" name="amount" required>
+
+    <label for="payingby">Paying By:</label>
+    <select id="payingby" name="payingby" required>
+        <option value="">Select</option>
+        <option value="qrcode">QR Code</option>
+        <script>
+                      function redirectToThankYou() {
+        var payingBySelect = document.getElementById("payingby");
+        var selectedOption = payingBySelect.options[payingBySelect.selectedIndex].value;
+        
+        if (selectedOption === "qrcode") {
+            window.location.href = "qrcode.html";
+        }
+    }
+
+    document.getElementById("payingby").addEventListener("change", redirectToThankYou);
+</script>
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+    </select>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Submit" class="btn"onclick="window.location.href='d.thank you.html'; return false;">
+  </div>
+</div>
+  <footer class="footer">
+
+<div class="ff">
+<img src="logo.png" height=70 width=70 class="ig">
+<p class="ft"><h2>Mission Green Barak</h2>
+</div>
+<div class="ff-a">
+<p class="add">Address:Laxmi Charan Road</p>
+<p class="add">State: Assam </p>
+<p class="add">District: Karimganj</p>
+<p class="add">Phone No:+91xxxxxxxxxx</p>
+</div>
+<center><h2 class=last> &copy;Mission Green Barak..all rights reserved</h2></center>
+</footer>
+</form>
+</body>
+</html>
+<style>
+    *{
+margin:0;
+padding:0;
+}
+header{
+height:20%;
+width:100%;
+background-color:red;
+}
+.content{ 
+height:90%;
+width:100%;
+
+}
+  footer {
+      height: 35%;
+      width: 100%;
+      color:white;
+      background-color:black;
+      
+} 
+  nav a {
+      text-decoration: none;
+      float: right;
+      padding: 0px 20px;
+      font-size: 15px;
+      font-family: pacifico;
+    }
+
+    nav a:hover {
+      color: red;
+      background-color:white;
+    }
+
+    .L {
+      float: left;
+    }
+
+    nav {
+      height: 15%;
+      width: 100%;
+      background-color:white;
+      position: sticky;
+      top: 0;
+    }
+.L{
+float : left;
+}
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+ body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width:400px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+   
+  body{
+background-image:url("kjpg.jpg"); 
+background-size:100% 100%;
+}
+</style>
